@@ -83,8 +83,6 @@ class Game():
             response = input("Нажмите 'X' для выхода или любую другую клавишу для продолжения")
             if response == 'X' or response == 'Х':
                 break
-            player1_name = self.player1.name
-            player2_name = self.player2.name
             player1_card = self.deck.remove_card()
             player2_card = self.deck.remove_card()
             self.draw(self.player1.name, player1_card, self.player2.name, player2_card)
